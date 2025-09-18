@@ -5,40 +5,47 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>MadeInDK Apps — Info & Policies</title>
   <meta name="description" content="Info and privacy policies for MadeInDK apps.">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png"><!-- brug dit eget logo-filnavn -->
 </head>
 <body>
-  <header>
-    <h1>MadeInDK — Apps</h1>
-    <p style="color:#64748b;font-size:0.95rem">
-      Public information and privacy policies for our apps.
-    </p>
+  <header class="header">
+    <div class="container">
+      <div class="brand">
+        <img src="logo.png" alt="MadeInDK logo" />
+        <div>
+          <h1>MadeInDK — Apps</h1>
+          <div class="tag">Public info & privacy pages</div>
+        </div>
+      </div>
+      <p class="lead">Official links used for App Store Connect (Support & Privacy Policy).</p>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Privacy Policies</h2>
-      <ul class="link-list">
-        <li><a href="privacy/">General Privacy Policy (all apps)</a></li>
-        <li><a href="app1/">Privacy Policy — ReflexRealm</a></li>
-      </ul>
-    </section>
+  <main class="main">
+    <div class="container grid">
+      <section class="card">
+        <h2>Privacy Policies</h2>
+        <p class="small">These pages describe data handling for our apps.</p>
+        <ul class="link-list">
+          <li><a href="privacy.html">General Privacy Policy (all apps)</a></li>
+          <li><a href="reflexrealm-privacy.html">Privacy Policy — ReflexRealm</a></li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>
-        For questions or support, contact us at:<br>
-        <a href="mailto:factionui@gmail.com">factionui@gmail.com</a>
-      </p>
-    </section>
+      <section class="card">
+        <h2>Support</h2>
+        <p class="small">Get help or contact us directly.</p>
+        <p><a class="btn" href="support.html">Open Support Page</a></p>
+        <p class="small">Email: <a href="mailto:factionui@gmail.com">factionui@gmail.com</a></p>
+      </section>
+    </div>
   </main>
 
-  <footer>
+  <footer class="footer">
     © <span id="y"></span> MadeInDK
   </footer>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
