@@ -1,1 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MadeInDK Apps — Info & Policies</title>
+  <meta name="description" content="Info and privacy policies for MadeInDK apps.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <h1>MadeInDK — Apps</h1>
+    <p style="color:#64748b;font-size:0.95rem">
+      Public information and privacy policies for our apps.
+    </p>
+  </header>
 
+  <main>
+    <section>
+      <h2>Privacy Policies</h2>
+      <ul class="link-list">
+        <li><a href="privacy/">General Privacy Policy (all apps)</a></li>
+        <li><a href="app1/">Privacy Policy — ReflexRealm</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        For questions or support, contact us at:<br>
+        <a href="mailto:factionui@gmail.com">factionui@gmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> MadeInDK
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
